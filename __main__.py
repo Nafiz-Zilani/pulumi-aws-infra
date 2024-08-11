@@ -81,7 +81,7 @@ security_group = aws.ec2.SecurityGroup("web-secgrp",
 )
 
 # Create instance in the VPC and subnet
-ami_id = "ami-65736737577" #Replace with a valid id
+ami_id = "ami-060e277c0d4cce553" #Replace with a valid id
 instance_type = "t3.small"
 
 # Read the public key from the env (Set on Github actions)
