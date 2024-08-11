@@ -87,7 +87,7 @@ ami_id = "ami-060e277c0d4cce553" #Replace with a valid id
 instance_type = "t3.small"
 
 # Read the public key from the env (Set on Github actions)
-public_key = os.getenv("PUBLIC_KEY")
+public_key=os.getenv("PUBLIC_KEY")
 
 # Create the EC2 keyPair using the public key
 key_pair = aws.ec2.KeyPair("My-key-pair",
