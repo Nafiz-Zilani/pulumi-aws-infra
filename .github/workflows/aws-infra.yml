@@ -1,4 +1,4 @@
-ame: Deploy AWS Infra
+name: Deploy AWS Infra
 
 on:
   push:
