@@ -28,7 +28,7 @@ public_subnet = ec2.Subnet('public-subnet',
     cidr_block="10.10.1.0/24",
     map_public_ip_on_launch=True,
     tags={"Name": "public-subnet"},
-    availability_zone = 'ap-southeast-1'
+    availability_zone = 'ap-southeast-1a'
 )
 #Privet Subnet
 privet_subnet = ec2.Subnet('privet-subnet',
@@ -36,7 +36,7 @@ privet_subnet = ec2.Subnet('privet-subnet',
     cidr_block="10.10.2.0/24",
     map_public_ip_on_launch=True,
     tags={"Name": "privet-subnet"},
-    availability_zone = 'ap-southeast-1'
+    availability_zone = 'ap-southeast-1a'
 )
 
 # Create Route Table
