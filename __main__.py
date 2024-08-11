@@ -50,7 +50,7 @@ route_table = aws.ec2.RouteTable("route-table",
 
 # Associate Route Table with public subnet
 rt_assoc_public = aws.ec2.RouteTableAssociation("rt-assoc-public",
-    subnet_id=pubic_subnet.id,
+    subnet_id=public_subnet.id,
     route_table_id=route_table.id,
 )
 
