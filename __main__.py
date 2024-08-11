@@ -23,10 +23,11 @@ igw = ec2.InternetGateway('igw',
 
 #Create subnet
 #Public Subnet
-pubic_subnet = ec2.subnet('public-subnet',
-    vpc_id = vpc.id,
-    cidr_block = "10.10.1.0/24",
-    map_public_ip_on_launch = True,
+public_subnet = ec2.Subnet('public-subnet',
+    vpc_id=vpc.id,
+    cidr_block="10.10.1.0/24",
+    map_public_ip_on_launch=True,
+    tags={"Name": "public-subnet"},
     availability_zone = 'ap-southeast-1a'
 )
 #Privet Subnet
