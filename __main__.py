@@ -31,7 +31,7 @@ public_subnet = ec2.Subnet('public-subnet',
     availability_zone = 'ap-southeast-1a'
 )
 #Privet Subnet
-privet_subnet = ec2.subnet('privet-subnet',
+privet_subnet = ec2.Subnet('privet-subnet',
     vpc_id=vpc.id,
     cidr_block="10.10.2.0/24",
     map_public_ip_on_launch=True,
